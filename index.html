@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Image Gallery</title>
+	<title>Photo Memo</title>
 	<style>
          h1 {
         text-align: center;
-        color:#AD1457;
+        color:#ffffff;
         font-size: 50px;
       }
         body {
-        background-color: #ffb6c1;
+        background-color: #9370DB;
       }
 		.container {
 			display: flex;
@@ -22,7 +22,7 @@
   width: 300px;
   margin: 20px;
   padding: 10px;
-  background-color: #FCE4EC;
+  background-color: #FFFDD0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
@@ -38,66 +38,87 @@
   border-radius: 5px;
 }
 
-.card h2 {
-  font-size: 1.5rem;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  text-align: center;
-  color: #C2185B;
-}
+.card .back-side {
+			display: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			padding: 10px;
+			background-color: #FFFDD0;
+			border-radius: 5px;
+		}
 
-.card p {
-  font-size: 1rem;
-  text-align: justify;
-  color: #AD1457;
-  line-height: 1.5;
-}
+.card .back-side h2,
+.card .back-side p {
+		color: #654321;
+		}
+
+.card.flip .back-side {
+		display: block;
+		}
 	</style>
 </head>
 <body>
 	<h1>포토메모 2023</h1>
 	<div class="container">
 		<div class="card">
-			<img src="12.avif" alt="Image 1">
+			<img src="11.jpg" alt="Image 1">
+      <div class="back-side">
 			<h2>이미지 1</h2>
 			<p>"포토메모"는 고객의 소중한 추억을 섬세한 디자인과 짧은 글귀를 담아 영구적으로 보존하는 서비스입니다. 우리는 고객의 사진을 통해 특별한 순간을 기록하고, 포토메모를 통해 당신의 이야기를 더욱 아름답게 표현하며, 소중한 추억을 영원히 간직합니다. 또한, 고객의 프라이버시를 보장하기 위해, 포토메모의 웹사이트는 비공개로 운영됩니다. 다른 사람들은 웹사이트가 공개되지 않는 한 고객의 사진과 이야기를 볼 수 없습니다.</p>
+    </div>
 		</div>
 		<div class="card">
-			<img src="13.avif" alt="Image 2">
+			<img src="12.jpg" alt="Image 2">
+      <div class="back-side">
 			<h2>이미지 2</h2>
 			<p>설명글, 일기 등 첨부 가능합니다.</p>
+      </div>
 		</div>
 		<div class="card">
-			<img src="14.avif" alt="Image 3">
+			<img src="13.jpg" alt="Image 3">
+      <div class="back-side">
 			<h2>이미지 3</h2>
 			<p>설명글, 일기 등 첨부 가능합니다.</p>
+      </div>
 		</div>
 		<div class="card">
-			<img src="15.jpg" alt="Image 4">
+			<img src="14.jpg" alt="Image 4">
+      <div class="back-side">
 			<h2>이미지 4</h2>
 			<p>설명글, 일기 등 첨부 가능합니다.</p>
+      </div>
 		</div>
 		<div class="card">
-			<img src="16.jpg" alt="Image 5">
+			<img src="15.jpg" alt="Image 5">
+      <div class="back-side">
             <h2>이미지 5</h2>
             <p>설명글, 일기 등 첨부 가능합니다.</p>
             </div>
+            </div>  
             <div class="card">
-            <img src="17.avif" alt="Image 6">
+            <img src="16.jpg" alt="Image 6">
+            <div class="back-side">
             <h2>이미지 6</h2>
             <p>설명글, 일기 등 첨부 가능합니다.</p>
             </div>
+            </div>
         <div class="card">
-            <img src="18.avif" alt="Image 5">
+            <img src="17.jpg" alt="Image 5">
+            <div class="back-side">
             <h2>이미지 7</h2>
             <p>설명글, 일기 등 첨부 가능합니다.</p>
             </div>
+            </div>
         <div class="card">
-            <img src="19.avif" alt="Image 6">
+            <img src="18.jpg" alt="Image 6">
+            <div class="back-side">
             <h2>이미지 8</h2>
             <p>설명글, 일기 등 첨부 가능합니다.</p>
             </div>
+            </div>
         </div>
-            
         </body>
     </html>
