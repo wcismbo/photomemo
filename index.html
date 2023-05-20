@@ -58,6 +58,19 @@
 .card.flip .back-side {
 		display: block;
 		}
+    .bottom-image {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bottom-image img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+
 	</style>
 </head>
 <body>
@@ -105,20 +118,24 @@
             <p>설명글, 일기 등 첨부 가능합니다.</p>
             </div>
             </div>
-        <div class="card">
-            <img src="14.jpg" alt="Image 5">
-            <div class="back-side">
-            <h2>이미지 7</h2>
-            <p>설명글, 일기 등 첨부 가능합니다.</p>
-            </div>
-            </div>
-        <div class="card">
-            <img src="18.jpg" alt="Image 6">
-            <div class="back-side">
-            <h2>이미지 8</h2>
-            <p>설명글, 일기 등 첨부 가능합니다.</p>
-            </div>
-            </div>
+            <div class="card">
+              <img src="14.jpg" alt="Image 5">
+              <div class="back-side">
+                  <h2>이미지 7</h2>
+                  <p>설명글, 일기 등 첨부 가능합니다.</p>
+              </div>
+          </div>
+          <div class="card">
+              <img src="18.jpg" alt="Image 6">
+              <div class="back-side">
+                  <h2>이미지 8</h2>
+                  <p>설명글, 일기 등 첨부 가능합니다.</p>
+              </div>
+          </div>
+          <div class="bottom-image">
+              <img src="1.png" alt="Image 1">
+          </div>
+          
         </div>
         </body>
     </html>
